@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut - Hot & Fresh Pizza Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="dark-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/hero.jpg" alt="Pizza Hut Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#featured">Featured</a>
+                <a href="#menu-preview">Menu</a>
+                <a href="#limited-offers">Offers</a>
+                <a href="#location-delivery">Locations</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="order-now">Order Now</button>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="dark-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animate-text">Crafted with Passion,<br>Served with Pride</h1>
+            <p class="animate-text">Experience the perfect blend of premium ingredients and authentic flavors</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <span>Fast Delivery</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <span>30 Min or Free</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <span>Top Rated</span>
+                </div>
+            </div>
+            <div class="cta-buttons animate-text">
+                <button class="primary-btn">
+                    <i class="fas fa-pizza-slice"></i>
+                    Order Now
+                </button>
+                <button class="secondary-btn">
+                    <i class="fas fa-book-open"></i>
+                    View Menu
+                </button>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured & Highlights Section -->
+    <section id="featured" class="dark-featured">
+        <div class="section-header">
+            <h2>Featured & Highlights</h2>
+            <p>Discover our most loved and special creations</p>
+        </div>
+        
+        <div class="featured-grid">
+            <div class="featured-item large">
+                <img src="image/pizza 1.jpg" alt="Special Pizza">
+                <div class="item-content">
+                    <div class="item-tag">Chef's Special</div>
+                    <h3>Supreme Pizza</h3>
+                    <p>Loaded with premium toppings and our special sauce</p>
+                    <div class="item-price">
+                        <span class="price">$24.99</span>
+                        <button class="order-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="featured-item">
+                <img src="image/pizza 2.jpg" alt="Margherita">
+                <div class="item-content">
+                    <div class="item-tag">Bestseller</div>
+                    <h3>Margherita</h3>
+                    <p>Classic Italian flavors</p>
+                    <div class="item-price">
+                        <span class="price">$18.99</span>
+                        <button class="order-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="featured-item">
+                <img src="image/pizza 3.jpg" alt="BBQ Chicken">
+                <div class="item-content">
+                    <div class="item-tag">New</div>
+                    <h3>BBQ Chicken</h3>
+                    <p>Smoky BBQ flavored chicken</p>
+                    <div class="item-price">
+                        <span class="price">$22.99</span>
+                        <button class="order-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlights-container">
+            <div class="highlight-box">
+                <i class="fas fa-pepper-hot"></i>
+                <h4>Fresh Ingredients</h4>
+                <p>Handpicked premium quality ingredients</p>
+            </div>
+            <div class="highlight-box">
+                <i class="fas fa-fire"></i>
+                <h4>Wood Fired</h4>
+                <p>Traditional wood fired oven pizza</p>
+            </div>
+            <div class="highlight-box">
+                <i class="fas fa-medal"></i>
+                <h4>Award Winning</h4>
+                <p>Multiple culinary awards winner</p>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Preview Section -->
+    <section id="menu-preview" class="dark-menu">
+        <div class="section-header">
+            <h2>Our Menu</h2>
+            <p>Explore our wide range of delicious pizzas</p>
+        </div>
+
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="veg">Vegetarian</button>
+            <button class="category-btn" data-category="non-veg">Non-Veg</button>
+            <button class="category-btn" data-category="specialty">Specialty</button>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-item" data-category="veg">
+                <div class="menu-item-image">
+                    <img src="image/pizza 1.jpg" alt="Veggie Supreme">
+                    <div class="item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-info">
+                    <div class="item-type"><i class="fas fa-leaf"></i> Veg</div>
+                    <h3>Veggie Supreme</h3>
+                    <p>Fresh vegetables, mushrooms, olives, and extra cheese</p>
+                    <div class="item-footer">
+                        <span class="price">$19.99</span>
+                        <button class="add-to-cart">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="non-veg">
+                <div class="menu-item-image">
+                    <img src="image/pizza 2.jpg" alt="Chicken Supreme">
+                    <div class="item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-info">
+                    <div class="item-type"><i class="fas fa-drumstick-bite"></i> Non-Veg</div>
+                    <h3>Chicken Supreme</h3>
+                    <p>Grilled chicken, bell peppers, onions, and BBQ sauce</p>
+                    <div class="item-footer">
+                        <span class="price">$22.99</span>
+                        <button class="add-to-cart">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="specialty">
+                <div class="menu-item-image">
+                    <img src="image/pizza 3.jpg" alt="Truffle Special">
+                    <div class="item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-info">
+                    <div class="item-type"><i class="fas fa-star"></i> Specialty</div>
+                    <h3>Truffle Special</h3>
+                    <p>Truffle oil, mushrooms, parmesan, and arugula</p>
+                    <div class="item-footer">
+                        <span class="price">$26.99</span>
+                        <button class="add-to-cart">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="veg">
+                <div class="menu-item-image">
+                    <background src="image/pizza 12.jpg">
+                    <div class="item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-info">
+                    <div class="item-type"><i class="fas fa-leaf"></i> Veg</div>
+                    <h3>Mediterranean</h3>
+                    <p>Feta cheese, olives, sun-dried tomatoes, and herbs</p>
+                    <div class="item-footer">
+                        <span class="price">$20.99</span>
+                        <button class="add-to-cart">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="specialty">
+                <div class="menu-item-image">
+                    <img src="image/pizza 1.jpg" alt="Mexican Fiesta">
+                    <div class="item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-info">
+                    <div class="item-type"><i class="fas fa-fire"></i> Specialty</div>
+                    <h3>Mexican Fiesta</h3>
+                    <p>Spicy chicken, jalapeños, bell peppers, and Mexican sauce</p>
+                    <div class="item-footer">
+                        <span class="price">$23.99</span>
+                        <button class="add-to-cart">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="veg">
+                <div class="menu-item-image">
+                    <img src="image/pizza 2.jpg" alt="Pesto Delight">
+                    <div class="item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-info">
+                    <div class="item-type"><i class="fas fa-leaf"></i> Veg</div>
+                    <h3>Pesto Delight</h3>
+                    <p>Fresh basil pesto, cherry tomatoes, mozzarella, and pine nuts</p>
+                    <div class="item-footer">
+                        <span class="price">$21.99</span>
+                        <button class="add-to-cart">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-full-menu">
+            <button class="full-menu-btn">
+                View Full Menu
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+    <!-- Limited-Time Offers Section -->
+    <section id="limited-offers" class="dark-offers">
+        <div class="section-header">
+            <h2>Limited-Time Offers</h2>
+            <p>Don't miss out on these amazing deals</p>
+        </div>
+
+        <div class="offers-container">
+            <div class="offer-card hot-deal">
+                <div class="offer-timer">
+                    <div class="timer-item">
+                        <span class="time">48</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="time">35</span>
+                        <span class="label">Mins</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="time">20</span>
+                        <span class="label">Secs</span>
+                    </div>
+                </div>
+                <div class="offer-content">
+                    <div class="offer-tag">HOT DEAL</div>
+                    <h3>Family Feast</h3>
+                    <ul class="offer-items">
+                        <li><i class="fas fa-check"></i> 2 Large Pizzas</li>
+                        <li><i class="fas fa-check"></i> 4 Soft Drinks</li>
+                        <li><i class="fas fa-check"></i> Garlic Bread</li>
+                        <li><i class="fas fa-check"></i> Chicken Wings</li>
+                    </ul>
+                    <div class="offer-price">
+                        <div class="price-tag">
+                            <span class="original">$59.99</span>
+                            <span class="discounted">$39.99</span>
+                        </div>
+                        <button class="claim-btn">Claim Offer</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <div class="offer-tag">WEEKEND SPECIAL</div>
+                        <h3>Buy 1 Get 1 Free</h3>
+                        <p>On all medium pizzas</p>
+                        <button class="claim-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <div class="offer-tag">STUDENT SPECIAL</div>
+                        <h3>Student Discount</h3>
+                        <p>Valid student ID required</p>
+                        <button class="claim-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <div class="offer-tag">LUNCH DEAL</div>
+                        <h3>Lunch Time Special</h3>
+                        <p>12 PM - 3 PM only</p>
+                        <button class="claim-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Location & Delivery Section -->
+    <section id="location-delivery" class="dark-location">
+        <div class="section-header">
+            <h2>Find & Order</h2>
+            <p>Locate your nearest Pizza Hut and get quick delivery</p>
+        </div>
+
+        <div class="location-container">
+            <div class="delivery-form">
+                <div class="form-header">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Delivery Location</h3>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Enter your delivery address">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="delivery-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-text">
+                            <h4>Delivery Time</h4>
+                            <p>30-45 minutes</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-motorcycle"></i>
+                        <div class="info-text">
+                            <h4>Delivery Fee</h4>
+                            <p>Free delivery on orders above $30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="store-locator">
+                <div class="form-header">
+                    <i class="fas fa-store"></i>
+                    <h3>Nearest Restaurants</h3>
+                </div>
+                <div class="store-list">
+                    <div class="store-item">
+                        <div class="store-info">
+                            <h4>Pizza Hut Downtown</h4>
+                            <p><i class="fas fa-map-pin"></i> 123 Main St, Downtown</p>
+                            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        </div>
+                        <div class="store-status open">
+                            <span>Open Now</span>
+                            <button class="direction-btn">
+                                <i class="fas fa-directions"></i>
+                                Directions
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="store-item">
+                        <div class="store-info">
+                            <h4>Pizza Hut Westside</h4>
+                            <p><i class="fas fa-map-pin"></i> 456 West Ave, Westside</p>
+                            <p><i class="fas fa-phone"></i> (555) 987-6543</p>
+                        </div>
+                        <div class="store-status open">
+                            <span>Open Now</span>
+                            <button class="direction-btn">
+                                <i class="fas fa-directions"></i>
+                                Directions
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="store-item">
+                        <div class="store-info">
+                            <h4>Pizza Hut Mall</h4>
+                            <p><i class="fas fa-map-pin"></i> 789 Mall Road, Shopping District</p>
+                            <p><i class="fas fa-phone"></i> (555) 456-7890</p>
+                        </div>
+                        <div class="store-status closed">
+                            <span>Closed</span>
+                            <button class="direction-btn">
+                                <i class="fas fa-directions"></i>
+                                Directions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery-features">
+            <div class="feature-item">
+                <i class="fas fa-shipping-fast"></i>
+                <h4>Fast Delivery</h4>
+                <p>Quick and reliable delivery to your doorstep</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <h4>Live Tracking</h4>
+                <p>Track your order in real-time</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h4>Contactless Delivery</h4>
+                <p>Safe and hygienic delivery options</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="dark-reviews">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>Real feedback from pizza lovers</p>
+        </div>
+
+        <div class="reviews-container">
+            <button class="review-nav prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-details">
+                                <h4>Sarah Johnson</h4>
+                                <p>Food Blogger</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>"The best pizza I've ever had! The crust is perfectly crispy, and the toppings are always fresh. Their delivery service is super quick too!"</p>
+                    </div>
+                    <div class="review-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-details">
+                                <h4>Mike Chen</h4>
+                                <p>Regular Customer</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>"Their specialty pizzas are out of this world! The Mexican Fiesta is my absolute favorite. Great value for money!"</p>
+                    </div>
+                    <div class="review-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>1 week ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-details">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Pizza Enthusiast</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>"Love their vegetarian options! The Pesto Delight is absolutely amazing. The online ordering system is very user-friendly too."</p>
+                    </div>
+                    <div class="review-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="review-nav next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="review-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <div class="review-stats">
+            <div class="stat-item">
+                <div class="stat-number">4.8</div>
+                <div class="stat-label">Average Rating</div>
+                <div class="stat-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15K+</div>
+                <div class="stat-label">Happy Customers</div>
+                <i class="fas fa-users stat-icon"></i>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfaction Rate</div>
+                <i class="fas fa-heart stat-icon"></i>
+            </div>
+        </div>
+    </section>
+     <!-- Social Proof Section -->
+     <section id="social-proof" class="dark-social">
+        <div class="section-header">
+            <h2>Join Our Pizza Community</h2>
+            <p>Share your pizza moments with us</p>
+        </div>
+
+        <div class="social-container">
+            <div class="social-engagement">
+                <div class="engagement-header">
+                    <h3>Share Your Pizza Story</h3>
+                    <p>Use #PizzaHutMoments to get featured</p>
+                </div>
+
+                <div class="social-stats">
+                    <div class="stat-box">
+                        <i class="fab fa-instagram"></i>
+                        <div class="stat-info">
+                            <span class="stat-count">500K+</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fab fa-facebook"></i>
+                        <div class="stat-info">
+                            <span class="stat-count">1M+</span>
+                            <span class="stat-label">Likes</span>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fab fa-twitter"></i>
+                        <div class="stat-info">
+                            <span class="stat-count">250K+</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-cta">
+                    <p>Follow us on social media</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="dark-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <h3>Pizza Hut</h3>
+                    <p>Crafting moments of joy, one slice at a time.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#deals">Special Deals</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>Order Now: 1-800-PIZZA</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>support@pizzahut.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Find a Pizza Hut near you</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for exclusive offers and updates</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="app-downloads">
+                    <p>Get our mobile app</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <div class="copyright">
+                    <p>&copy; 2025 Pizza Hut. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
